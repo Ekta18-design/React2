@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+.modalOverLay{
+  width: 100%;
+  position: fixed;
+  display: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalShow{
+  display: block;
+}
+.ModalDiv{
+  width: 320px;
+  height: 320px;
+  position: fixed;
+  left: 50%;
+  transition: 0.3s;
+  top: -500px;
+  transform: translate(-50%,-50%);
+  background-color:aqua;
+}
+.showModalDiv{
+  top:50%;
+}
+
+.en{
+  position: fixed;
+  right: -30px;
+  top: 100px;
+  transform: rotate(90deg);
+}

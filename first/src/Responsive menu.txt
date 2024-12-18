@@ -1,0 +1,45 @@
+   let [menuStatus,setMenuStatus]=useState(false)
+ 
+ <button className='micon' onClick={() => setMenuStatus(!menuStatus)}>
+        {
+          menuStatus ?
+          <span>&times;</span>
+          :
+          <span>&#9776;</span>
+
+        }
+        
+        </button>
+        <div className={`menu ${menuStatus ? 'activeMenu' : ''}`}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+           <li>Gallery</li>
+          <li>Contact</li>
+        </ul>
+
+        </div>
+
+        .menu {
+  width: 80%;
+  text-align: left;
+  left: -100% ;
+  position: fixed;
+  transition: 0.5s;
+  list-style: none;
+  height: 100vh;
+  background-color:darkgray;
+
+}
+.activeMenu{
+  left: 0%;
+}
+.menu ul li{
+    list-style: none;
+    padding: 10px 0px;
+
+}
+.micon{
+  position: absolute;
+  right: 10px;
+}
